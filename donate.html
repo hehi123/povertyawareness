@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Poverty</title>
+	<meta charset="utf-8" />
+	<meta name="description" content="Poverty around the world" />
+	<meta name="keyword" content="HTML, CSS" />
+	<meta name="author" content="A. F. Ducusin, N. S. Sevilla"/>
+	
+	<link rel="shortcut icon" href="a.ico"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="donatestyle.css">
+	
+	<script src="java.js"></script>
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-157736734-10"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-157736734-10');
+	</script>
+	
+</head>
+<body>
+
+<nav class="d">
+		<ul>		
+			<li><a href=" http://ymsat2020.000webhostapp.com/">Website Voting</a></li>
+			<li><a href="donate.html">Donate</a></li>
+			<li><a href="mission.html">Mission</a></li>
+			<li><a href="about.html">About</a></li>
+			<div class="drop">
+				<button class="button">Menu 
+					<i class="fa fa-caret-down"></i>
+				</button>
+					<div class="drop2">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="page1.html">Page 1</a></li>
+							<li><a href="page2.html">Page 2</a></li>
+						</ul>
+					</div>
+			</div> 
+		</ul>
+</nav>
+
+
+	<header>
+		<p><b>awareness.com </b></p>
+	</header>
+
+	
+	<br>
+	
+	<h1>Donate to us</h1>
+		<form name="donate" method="post" autocomplete="off">
+			<fieldset>
+				<legend> User Details </legend>
+				<label> Enter Full Name 
+					<input type="text" name = "fname" required  placeholder="Name" />
+				</label> 
+				<label> Enter email address 
+					<input type="text" name = "add" required placeholder="example@email.com"/>
+				</label>
+				<label> Method of Payment
+					<input class="w3-radio"  type="radio" name = "mode" value="Paypal"/> Paypal
+					<input class="w3-radio" type="radio" name = "mode" value="Fundly"/> Fundly
+					<input class="w3-radio"  type="radio" name = "mode" value=" Qgiv"/>  Qgiv
+					<input class="w3-radio" type="radio" name = "mode" value=" Razoo"/>  Mightycause
+				</label>
+				<label> Credit card number 
+					<input type="text" name="cardnumber" required placeholder="1111-2222-3333-4444">
+				</label>
+				<label> Donation
+					<input type="number" name = "item1" required size="3" min="0" onclick="amt()" id="lmao" /> Amount: $ 
+					<output name="amount" id="bill">0.00</output>
+				</label>
+				
+				<input class="w3-btn w3-teal w3-border" type="submit" value="Donate" onclick="return confirm('Please confirm donation');"/>
+				<input class="w3-btn w3-teal w3-border" type="reset" value="Clear" onclick="hihi();return confirm('Are your sure you want to reset?');"/> 
+			</fieldset>
+			
+			<fieldset class="w3-card-4 w3-teal">
+				<legend class="w3-card4 w3-white"> Comments </legend>
+				<input class="w3-input w3-border w3-hover-green" type="text" name = "fname"  placeholder="Feel free to put comments or suggestions here" />
+			<br><br><br>
+				<input class="w3-btn w3-teal w3-border" type="submit" value="Submit" onclick="return confirm('Please confirm comments');"/>
+				<input class="w3-btn w3-teal w3-border" type="reset" value="Clear" onclick="hehe();return confirm('Are you sure you want to clear comments?');"/>
+			</fieldset>
+		</form>
+<br><br><br><br><br><br>
+
+
+</body>
+</html>
